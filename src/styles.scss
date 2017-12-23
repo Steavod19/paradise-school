@@ -3,3 +3,26 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "styles/variables";
 @import "../node_modules/font-awesome/scss/font-awesome";
+
+.landing-conatiner {
+  // background-image: url("assets/img/school.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 95vh;
+  background-position: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("assets/img/school.jpg");
+  // top: -70;
+  // opacity: 0.6;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  margin-top: 30px;
+}
+.back-button{
+  margin-top: 30px;
+}

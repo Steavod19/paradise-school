@@ -9,6 +9,9 @@ export class TourGuideComponent implements OnInit {
 
   mapRoom: boolean = false;
   classRoom: boolean = false;
+  classRoomOne: boolean = false;
+  classRoomTwo: boolean = false;
+
   // back: boolean = true;
 
  @Output() back = new EventEmitter();
@@ -20,10 +23,24 @@ export class TourGuideComponent implements OnInit {
 
   toggleMapRoom() {
     this.mapRoom = !this.mapRoom;
+    this.classRoom = false;
   }
   toggleClassRoom() {
     this.classRoom = !this.classRoom;
+    this.mapRoom = false;
   }
+
+  toggleClassRoomOne() {
+    this.classRoomOne = !this.classRoomOne;
+    this.classRoomTwo = false;
+
+  }
+  toggleClassRoomTwo() {
+    this.classRoomTwo = !this.classRoomTwo;
+    this.classRoomOne = false;
+
+  }
+
   constructor() { }
 
   ngOnInit() {

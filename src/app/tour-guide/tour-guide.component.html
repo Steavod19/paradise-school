@@ -1,15 +1,15 @@
-<div class="container" style="margin-bottom:20px;">
+<div class="container back-button" style="margin-bottom:20px;">
   <a class="btn btn-primary btn-sm" (click)="toggleBack()" href="#" role="button">Back</a>
 </div>
 
 <div class="container">
   <div class="panel panel-default">
     <div (click)="toggleMapRoom()" class="panel-heading" style="cursor:pointer;">
-      <h3 class="panel-title">Map Room</h3>
+      <h3 class="panel-title">Paradise Center</h3>
     </div>
     <div *ngIf="mapRoom" class="panel-body">
       <p>
-        Here is a sentence about the map room.
+        Here is a sentence about the school.
       </p>
       <a href="#" class="thumbnail">
         <img src="/assets/img/school.jpg" alt="...">
@@ -19,7 +19,6 @@
         <source src="/assets/sounds/0614.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
       </audio>
-
     </div>
   </div>
 </div>
@@ -30,18 +29,33 @@
       <h3 class="panel-title">Historic Class Room</h3>
     </div>
     <div *ngIf="classRoom" class="panel-body">
-      <p>
-        Here is a sentence about the class room.
-      </p>
-      <a href="#" class="thumbnail">
-        <img src="/assets/img/school.jpg" alt="...">
-      </a>
-      <audio controls>
-        <source src="/assets/sounds/0614.ogg" type="audio/ogg">
-        <source src="/assets/sounds/0614.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
 
+      <div class="panel panel-default">
+        <div (click)="toggleClassRoomOne()" class="panel-heading" style="cursor:pointer;">
+          <h3 class="panel-title">Chalk Boards</h3>
+        </div>
+        <div *ngIf="classRoomOne" class="panel-body">
+
+          <p>lots of information</p>
+
+          <p>bla bla lsdjf ablj sdlkj blakjsd bljasdlkbj lkajsdlkskjhb blakjsdjhb</p>
+
+
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div (click)="toggleClassRoomTwo()" class="panel-heading" style="cursor:pointer;">
+          <h3 class="panel-title">Desks</h3>
+        </div>
+        <div *ngIf="classRoomTwo" class="panel-body">
+
+          <p>lots of information</p>
+          <p>flkajf ldsfj alskdjf asdlkfj lsdkjf lkasdhk sjh fsiuhd jskdh kjs </p>
+          <p>lots of information</p>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
