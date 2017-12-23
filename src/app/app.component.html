@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<nav-bar></nav-bar>
+
+<div *ngIf="!tour" class="landing-conatiner">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Paradise Center</h1>
+      <p class="lead">This is the landing page information about your website and tour app</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <a class="btn btn-primary btn-lg" (click)="toggleTour()" href="#" role="button">Begin your tour  >></a>
+  </div>
+</div>
+
+<tour-guide *ngIf="tour"  (back)='toggleTour()' class="tour-conatiner"></tour-guide>

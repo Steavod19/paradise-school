@@ -1,0 +1,47 @@
+<div class="container" style="margin-bottom:20px;">
+  <a class="btn btn-primary btn-sm" (click)="toggleBack()" href="#" role="button">Back</a>
+</div>
+
+<div class="container">
+  <div class="panel panel-default">
+    <div (click)="toggleMapRoom()" class="panel-heading" style="cursor:pointer;">
+      <h3 class="panel-title">Map Room</h3>
+    </div>
+    <div *ngIf="mapRoom" class="panel-body">
+      <p>
+        Here is a sentence about the map room.
+      </p>
+      <a href="#" class="thumbnail">
+        <img src="/assets/img/school.jpg" alt="...">
+      </a>
+      <audio controls>
+        <source src="/assets/sounds/0614.ogg" type="audio/ogg">
+        <source src="/assets/sounds/0614.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="panel panel-default">
+    <div (click)="toggleClassRoom()" class="panel-heading" style="cursor:pointer;">
+      <h3 class="panel-title">Historic Class Room</h3>
+    </div>
+    <div *ngIf="classRoom" class="panel-body">
+      <p>
+        Here is a sentence about the class room.
+      </p>
+      <a href="#" class="thumbnail">
+        <img src="/assets/img/school.jpg" alt="...">
+      </a>
+      <audio controls>
+        <source src="/assets/sounds/0614.ogg" type="audio/ogg">
+        <source src="/assets/sounds/0614.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+    </div>
+  </div>
+</div>

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!';
+
+  tour = false;
+
+  toggleTour() {
+    this.tour = !this.tour;
+  }
+
 }
